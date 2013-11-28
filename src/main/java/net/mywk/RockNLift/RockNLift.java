@@ -100,7 +100,7 @@ public class RockNLift extends JavaPlugin implements Listener
     	{
     	      Player player = (Player)sender;
     	      sender.sendMessage(ChatColor.AQUA + "----------------------------------------");
-    	      sender.sendMessage(ChatColor.WHITE +"Otional settings for [Floor] sign:");
+    	      sender.sendMessage(ChatColor.WHITE +"Optional settings for [Floor] sign:");
     	      sender.sendMessage(ChatColor.WHITE +"Second and Third line are the Floor Name");
     	      sender.sendMessage(ChatColor.WHITE +"Fourth line is the Color of the Floor");
     	      sender.sendMessage(ChatColor.WHITE +"Available colors: BLACK, DARK_BLUE, GRAY");
