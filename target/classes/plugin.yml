@@ -1,0 +1,20 @@
+name: RockNLift
+version: '1.0'
+author: Mywk
+website: https://github.com/Mywk/RockNLift
+main: net.mywk.RockNLift.RockNLift
+description: ${project.description}
+softdepend:
+commands:
+  rocknlift:
+    description: Shows RockNLift mod usage.
+    aliases: [lift]
+    
+  rocknlift.help:
+    description: How to create a lift?!
+
+permissions:
+    rocknlift:
+        default: true
+    rocknlift.help:
+        default: true
