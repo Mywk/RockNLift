@@ -1,5 +1,5 @@
 name: ${project.name}
-version: '1.0'
+version: '1.02'
 author: Mywk
 website: https://github.com/Mywk/RockNLift
 main: net.mywk.RockNLift.RockNLift

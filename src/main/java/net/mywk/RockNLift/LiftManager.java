@@ -100,10 +100,16 @@ public class LiftManager {
 			          Sign floorSign = (Sign)blockAt.getState();
 			          floorSigns.add(floorSign);
 			          
-			          Floor floor;
-			          if(floorSign.getLine(0).equals("[Floor]"))
+			          Floor floor; 
+			          if(floorSign.getLine(0).toLowerCase().equals("[floor]"))
 			          {
-				          floor = new Floor(floorNumber, ((int)blockAt.getLocation().getY())-2, floorSign.getLine(1) + "\n" + floorSign.getLine(2));
+			        	  String text1 = " ";
+			        	  String text2 = " ";
+			        	  if(floorSign.getLine(1).length()>0)
+			        		  text1 = floorSign.getLine(1);
+			        	  if(floorSign.getLine(2).length()>0)
+			        		  text2 = floorSign.getLine(2);
+				          floor = new Floor(floorNumber, ((int)blockAt.getLocation().getY())-2, text1 + "\n" + text2);
 			        	  floorSign.setLine(0,ChatColor.WHITE + "["+ChatColor.GOLD+"Floor"+ChatColor.WHITE+"]");
 			        	  
 				          HashSet<String> allowedColors = new HashSet<String>(java.util.Arrays.asList(
