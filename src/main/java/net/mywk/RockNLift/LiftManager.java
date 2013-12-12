@@ -105,9 +105,9 @@ public class LiftManager {
 			          {
 			        	  String text1 = " ";
 			        	  String text2 = " ";
-			        	  if(floorSign.getLine(1).length()>0)
+			        	  if(floorSign.getLine(1) != null && floorSign.getLine(1).length()>0)
 			        		  text1 = floorSign.getLine(1);
-			        	  if(floorSign.getLine(2).length()>0)
+			        	  if(floorSign.getLine(2) != null && floorSign.getLine(2).length()>0)
 			        		  text2 = floorSign.getLine(2);
 				          floor = new Floor(floorNumber, ((int)blockAt.getLocation().getY())-2, text1 + "\n" + text2);
 			        	  floorSign.setLine(0,ChatColor.WHITE + "["+ChatColor.GOLD+"Floor"+ChatColor.WHITE+"]");

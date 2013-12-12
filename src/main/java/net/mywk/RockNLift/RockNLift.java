@@ -126,7 +126,7 @@ public class RockNLift extends JavaPlugin implements Listener
 	  Block signBlock = clickedBlock.getRelative(BlockFace.UP);
 	  if ((signBlock != null) && (signBlock.getType() == Material.WALL_SIGN) && (clickedBlock.getType() == Material.WALL_SIGN))
 	  {
-		  if(((Sign)(signBlock.getState())).getLine(0).equals("[Floor]")||((Sign)(signBlock.getState())).getLine(0).contains(ChatColor.WHITE + "["+ChatColor.GOLD+"Floor"+ChatColor.WHITE+"]"))
+		  if(((Sign)(signBlock.getState())).getLine(0).toLowerCase().equals("[floor]")||((Sign)(signBlock.getState())).getLine(0).contains(ChatColor.WHITE + "["+ChatColor.GOLD+"Floor"+ChatColor.WHITE+"]"))
 		  {
 			  // The block directly below MUST be AIR and the one after MUST be solid
 			  if(clickedBlock.getRelative(BlockFace.DOWN).getType() == Material.AIR && clickedBlock.getRelative(BlockFace.DOWN).getRelative(BlockFace.DOWN).getType().isSolid())
